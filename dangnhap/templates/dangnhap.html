@@ -1,0 +1,38 @@
+{%load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trai{
+            text-align: left;
+        }
+    </style>
+    <link href="{%static 'css/style.css'%}" rel="stylesheet", type="text/css">
+</head>
+<body style="text-align: center" class="hinhnen">
+    {% comment %} <img src="static/img/anh1.jpg" alt="anh1.jpg"> {% endcomment %}
+    {% comment %} <img src="static/img/anh2.jpg" alt="anh2.jpg"> {% endcomment %}
+    {% comment %} <p style="background-image: url('static/img/anh2.jpg');"> {% endcomment %}
+    <h1>Đăng nhập</h1>
+    {% comment %} <form action = "bangnhanvien"> {% endcomment %}
+    <form action = "{%url 'xuly_dangnhap' %}">
+        <table align="center" >
+            <tr>
+                <td class="trai"><h3 style="color:red;">Tên đăng nhập<h3></td>
+                <td><input type="text" id="ten" name="ten"></td>
+            </tr>
+            <tr>
+                <td class="trai"><h3 style="color:red;">Mật khẩu<h3></td>
+                <td><input type="password" id="matkhau" name="matkhau"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="dk" id="dk" value="Đăng nhập" style="color:red;"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body{
+    background-color: aqua;
+    
+}
+.hinhnen{
+    background: url("/static/img/anh3.jpg")  0 no-repeat fixed;
+    width: 100%;
+}
